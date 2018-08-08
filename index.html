@@ -12,31 +12,62 @@
     <link href="css/main.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 
-<body>
+<body class="black">
     <nav>
-        <div class="row nav-wrapper">
+        <div class="row nav-wrapper red darken-3">
             <a id="titulo" class="col s3 m6 l6 offset-l1 brand-logo">Gato Vagabundo</a>
             <ul id="nav-mobile" class=" col s3 m6 l4 right hide-on-med-and-down">
-                <li><a class="menu" href="sass.html">Home</a></li>
-                <li><a class="menu" href="badges.html">Compo</a></li>
-                <li><a class="menu" href="collapsible.html">Modelos</a></li>
+                <li><a class="menu" href="#GatoVagabundo">Home</a></li>
+                <li><a class="menu" href="#libros">Libros</a></li>
+                <li><a class="menu" href="#comics">Comics</a></li>
             </ul>
         </div>
     </nav>
     <main>
+        <!--Contenedor home-->
+        <section id="home" class="row container blue-grey darken-2">
+            <div class="row"><h4 id="GatoVagabundo">Encuentra tus libros y Comics favoritos</h4></div>            
+            <div class="row offset-l2 title">
+                <h6 class="col s12 m12 l12">Eventos</h6>
+                <img class="row eventos" src="css/assets/images/conComics.jpg" alt=""> 
+                <img class="row eventos valign-wrapper" src="css/assets/images/conComics2.png" alt="">                            
+            </div>
+        </section>
         <!--Contenedor en donde se guardan las imagenes-->
-        <section id="container" class="row">
+        <section id="containerBooks" class="row container blue-grey darken-2">
+            <h4 id="libros">Libros</h4>
             <!-- <div id="response-container" class="col s4 m4 l4"></div> -->
         </section>
+        <section id="containerComics" class="row container blue-grey darken-2">
+            <h4 id="comics">Comics</h4>
+            <!-- <div id="response-container" class="col s4 m4 l4"></div> -->
+        </section>
+
+        <!-- MODAL-->
+        <div id="modalBooks" class="modal">
+            <div id="#modalData">
+                <!-- <div class="modal-content">
+                    <h4 id="tituloModal"></h4>
+                    <ul>
+                        <li id="imagenModal"></li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <a href="#home" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                </div> -->
+            </div>
+        </div>
     </main>
     <footer>
-        <div class="footer-copyright">
+        <div class="footer-copyright  black">
             <div>
                 © 2018 Copyright AlexDurán
             </div>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    
     <script src="js/app.js"></script>
 </body>
 
