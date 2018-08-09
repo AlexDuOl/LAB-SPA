@@ -23,7 +23,7 @@ font-family: 'Archivo Narrow', sans-serif;
             height: 15vh;
             position: fixed;
         }
-
+        
         #titulo {
             color: white;
             font-family: 'Pacifico', cursive;
@@ -70,19 +70,34 @@ font-family: 'Archivo Narrow', sans-serif;
             font-family: 'Archivo Narrow', sans-serif;
             text-align: center;
         }
-
+        
         section {
             padding-top: 3%;
         }
-
         /* Encabezados */
-
-        h4 {
+        
+        h4,
+        h6 {
             color: white;
             font-family: 'Asap', sans-serif;
             text-align: center;
         }
-
-        .eventos {  
-            width: 30%;
+        
+        .evento {
+            width: 20%;
+        }
+        
+        .eventos {
+            width: 100%;
+        }
+        
+        #tituloModal {
+            color: black;
+            font-family: 'Asap', sans-serif;
+            text-align: center;
+        }
+        
+        ul,
+        li {
+            list-style: none;
         }
