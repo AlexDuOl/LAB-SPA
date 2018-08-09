@@ -91,7 +91,8 @@ font-family: 'Archivo Narrow', sans-serif;
             width: 100%;
         }
         
-        #tituloModal {
+        #tituloModal,
+        #imagenModal {
             color: black;
             font-family: 'Asap', sans-serif;
             text-align: center;

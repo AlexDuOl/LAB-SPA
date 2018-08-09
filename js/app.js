@@ -16,38 +16,6 @@ function templateBooks(img, title, id) { //Colocando en el template los resultad
 }
 
 
-//*****MODAL******//
-function data(element) {
-    console.log(element);
-    let elementData = element.parentElement
-    let imgData = elementData.firstElementChild;
-    let titleData = element.firstChild;
-    let idData = element.lastChild;
-
-
-    //Asignando la data al modal
-
-    $('#tituloModal').html(titleData);
-    $('#imagenModal').html(imgData);
-    $('#idData').html(idData);
-
-
-    $('#modalData').append(
-        `<div class="modal-content">
-        <h4 id="tituloModal">${titleData}</h4>
-        <ul>
-            <li id="imagenModal">${imgData}</li>
-            <li id="imagenModal">${idData}</li>
-        </ul>
-    </div>
-    <div class="modal-footer">
-        <a href="#home" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
-   </div>`
-
-    )
-
-}
-
 //*****OBTENIENDO DATA PARA TEMPLATE******//
 $(document).ready(function() {
     dir = "https://api.mercadolibre.com/sites/MLM/search?q=libros" //Obteniendo data de la url para libros
@@ -76,3 +44,30 @@ $(document).ready(function() {
     });
 
 })
+
+
+//*****MODAL******//
+
+function data(element) {
+    console.log(element);
+    let elementData = element.parentElement
+    let imgData = elementData.firstElementChild;
+    let titleData = element.firstChild;
+
+    $('#tituloModal').html(titleData);
+    $('#imagenModal').html(imgData);
+
+    $('#modalData').append(
+        `<div class="modal-content">
+        <h4 id="tituloModal">${titleData}</h4>
+        <ul>
+            <li id="imagenModal">${imgData}</li>
+        </ul>
+    </div>
+    <div class="modal-footer">
+        <a href="#home" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+   </div>`
+
+    )
+
+}
